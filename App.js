@@ -25,12 +25,13 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import MapView from 'react-native-maps';
+import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
 
 const App: () => Node = () => {
   return (
     // <SafeAreaView style={{flex: 1}}>
     <MapView
+      provider={PROVIDER_GOOGLE}
       style={{
         ...StyleSheet.absoluteFillObject,
       }}
